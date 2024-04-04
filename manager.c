@@ -8,6 +8,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include <unistd.h>
 
 const int VM_SIZE=256;
 const int PAGE_SIZE=256;
@@ -116,6 +117,8 @@ int main(int argc, char* argv[])
 		
 		physicalad=frame*PAGE_SIZE + offset;
 		printf("PHYSICAL ADDRESS = %d\n",physicalad);
+
+		usleep(10000);
 	}
 	double hitrate=(double)totalhits/pages*100;
 	double faultrate=(double)fault/pages*100;
@@ -124,3 +127,6 @@ int main(int argc, char* argv[])
 	printf("\nPAGE TABLE HIT RATE= %.2f %c", faultrate,'%');
 	printf("\nPAGE TABLE MISS RATE= %.2f %c\n", (100-faultrate),'%');
 }
+
+// gcc -o manager manager.c
+// ./manager address.txt
