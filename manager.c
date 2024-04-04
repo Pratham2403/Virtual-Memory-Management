@@ -1,5 +1,5 @@
 /* 	OPERATING SYSTEMS  LAB PROJECT
-*	Pratham Aggarwal, Pratham Todi, Pratyush Chaturvedi, Pranav Gupta
+*	Pratham Aggarwal, Pratham Todi, Pratyush Kumar Chaturvedi, Pranav Gupta
 *	179303013
 *	DESIGNING A VIRTUAL MEMORY MANAGER
 */	
